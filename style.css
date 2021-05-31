@@ -1,0 +1,94 @@
+body {
+   background-color: #da8888; 
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+.content {
+   background-color: rgba(88, 217, 235, 0.815);
+   display: flex;
+   margin-top: 200px;
+}
+
+.content .container {
+   display: grid;
+   grid-template-columns: 50px 250px;
+   width: 3em;
+   overflow: hidden;
+   transition: 0.5s;
+}
+
+.content .container .text {
+   padding: 70px 10px;
+   background-color: #fff;
+}
+
+.wrapper {
+   background-color: #fff;
+   display: grid;
+   grid-template-columns: 50px 50px;
+   overflow: hidden;
+}
+
+.wrapper .images1,
+.wrapper .images2 {
+   transition: 0.5s;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.wrapper .images1 {
+   background-color: rgba(100, 220, 236, 0.815);
+}
+
+.wrapper .images1 i {
+   color: white;
+   transform: scale(1);
+}
+
+.wrapper .images2 i {
+   color: white;
+   transform: scale(1.8);
+}
+
+.wrapper .twitter {
+   background-color: #28f5e4;
+}
+
+.wrapper .facebook {
+   background-color: rgb(37, 37, 255);
+}
+
+.wrapper .linkedin {
+   background-color: #9ae2ac;
+}
+
+.wrapper .instagram {
+   background-color: rgb(102, 143, 102);
+}
+
+.wrapper .youtube {
+   background-color: rgb(135, 172, 3);
+}
+
+.wrapper .tumblr {
+   background-color: #a68de2;
+}
+
+.wrapper .dribbble {
+   background-color: rgb(199, 109, 199);
+}
+
+.container:hover {
+   width: 300px;
+   cursor: pointer;
+}
+
+.wrapper:hover .images1,
+.wrapper:hover .images2 {
+   transform: translateX(-50px);
+}
